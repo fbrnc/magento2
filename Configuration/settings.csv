@@ -1,5 +1,7 @@
-Handler,Param1,Param2,Param3,GROUPS,DEFAULT,production,devbox
-,,,,,,,
-# Urls,,,,,,,
-Est_Handler_Magento_CoreConfigData,%,%,web/{{un|}}secure/base{{_skin|_media|_js|}}_url,,--delete--,,
-Est_Handler_Magento_CoreConfigData,default,0,web/{{un|}}secure/base_url,,,http://m2demo.aoe-aws.com/,http://www.magento2.dev/
+Handler,Param1,Param2,Param3,DEFAULT,production,devbox
+,,,,,,
+Est_Handler_CopyFile,app/etc/config.php,,,,Configuration/config_prod.php,Configuration/config_devbox.php
+,,,,,,
+# Urls,,,,,,
+Est_Handler_Magento_CoreConfigData,%,%,web/{{un|}}secure/base{{_skin|_media|_js|}}_url,--delete--,,
+Est_Handler_Magento_CoreConfigData,default,0,web/{{un|}}secure/base_url,,http://m2demo.aoe-aws.com/,http://www.magento2.dev/
