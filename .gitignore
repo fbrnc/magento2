@@ -40,3 +40,10 @@ atlassian*
 /var/*
 !/var/.htaccess
 /vendor
+
+/tools/apply.php
+/tools/dryRun.php
+/tools/extract.php
+/tools/jsonlint
+/tools/value.php
+
