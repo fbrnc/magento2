@@ -1,6 +1,5 @@
 Chef::Log.info("Running deploy/before_symlink.rb...")
 Chef::Log.info("Release path: #{release_path}")
-Chef::Log.info("Environmnent: #{node[:m2demo_prod][:environment]}")
 
 
 # Map OpswOrk deploy attributes to the ones we need in deployment:
@@ -34,7 +33,7 @@ end
 execute "Apply Magento Environment Settings" do
   user "deploy"
   cwd "#{release_path}"
-  command "tools/apply.php '#{node[:m2demo_prod][:environment]}' Configuration/settings.csv"
+  command "tools/apply.php '#{ENV['ENVIRONMENT']}' Configuration/settings.csv"
   action :run
 end
 
