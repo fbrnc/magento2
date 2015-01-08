@@ -8,6 +8,7 @@
         "AFL-3.0"
     ],
     "require": {
+        "aoepeople/envsettingstool": "dev-master",
         "php": "~5.4.11|~5.5.0",
         "zendframework/zend-stdlib": "2.3.1",
         "zendframework/zend-code": "2.3.1",
@@ -184,7 +185,8 @@
         }
     },
     "config": {
-        "use-include-path": true
+        "use-include-path": true,
+        "bin-dir": "tools"
     },
     "autoload": {
         "psr-4": {
