@@ -55,9 +55,9 @@ file "#{release_path}/pub/version.txt" do
 end
 
 execute "Fix owner" do
-  command "chown -R deploy.www-data #{release_path}/var #{release_path}/pub/media"
+  command "chown -R deploy.www-data #{release_path}/var #{release_path}/pub/media #{release_path}/pub/static"
 end
 
 execute "Fix permissions" do
-  command "chmod -R ug+rws #{release_path}/var #{release_path}/pub/media"
+  command "chmod -R ug+rws #{release_path}/var #{release_path}/pub/media #{release_path}/pub/static"
 end
