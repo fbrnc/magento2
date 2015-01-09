@@ -48,3 +48,8 @@ end
 file "#{release_path}/.htaccess" do
   action :delete
 end
+
+file "#{release_path}/pub/version.txt" do
+  action :create_if_missing
+  content "Hello World! :)"
+end
