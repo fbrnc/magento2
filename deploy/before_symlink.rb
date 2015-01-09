@@ -30,12 +30,12 @@ execute "Run composer" do
   action :run
 end
 
-execute "Load env vars" do
-  user "deploy"
-  cwd "#{release_path}"
-  command ". #{release_path}/magento-environment.sh"
-  action :run
-end
+# execute "Load env vars" do
+#   user "deploy"
+#   cwd "#{release_path}"
+#   command ". #{release_path}/magento-environment.sh"
+#   action :run
+# end
 
 execute "Apply Magento Environment Settings" do
   user "deploy"
