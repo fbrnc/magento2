@@ -11,10 +11,10 @@ return array (
     array (
       'default' => 
       array (
-        'host' => getenv('DB_HOST'),
-        'dbname' => getenv('DB_NAME'),
-        'username' => getenv('DB_USER'),
-        'password' => getenv('DB_PASSWORD'),
+        'host' => '###DB_HOST###',
+        'dbname' => '###DB_NAME###',
+        'username' => '###DB_USER###',
+        'password' => '###DB_PASSWORD###',
         'model' => 'mysql4',
         'initStatements' => 'SET NAMES utf8;',
         'active' => '1',
@@ -31,7 +31,7 @@ return array (
   ),
   'session' => 
   array (
-    'save' => 'files',
+    'save' => 'db',
   ),
   'resource' => 
   array (
