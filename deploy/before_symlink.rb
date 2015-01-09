@@ -33,7 +33,7 @@ end
 execute "Apply Magento Environment Settings" do
   user "deploy"
   cwd "#{release_path}"
-  command "tools/apply.php '#{ENV['ENVIRONMENT']}' Configuration/settings.csv"
+  command "./magento-environment.sh && tools/apply.php '#{ENV['ENVIRONMENT']}' Configuration/settings.csv"
   action :run
 end
 
