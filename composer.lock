@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1b80781b36356ec1958b6bf7324d02d1",
+    "hash": "cc88a2e8332daf93c22ee4a154b4870e",
     "packages": [
         {
             "name": "aoepeople/envsettingstool",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AOEpeople/EnvSettingsTool.git",
-                "reference": "f79126b13340a27c430b44aa3293cd4da52f60d3"
+                "reference": "711435e3420a84d2394cff5dde6aff7cbce24d34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AOEpeople/EnvSettingsTool/zipball/f79126b13340a27c430b44aa3293cd4da52f60d3",
-                "reference": "f79126b13340a27c430b44aa3293cd4da52f60d3",
+                "url": "https://api.github.com/repos/AOEpeople/EnvSettingsTool/zipball/711435e3420a84d2394cff5dde6aff7cbce24d34",
+                "reference": "711435e3420a84d2394cff5dde6aff7cbce24d34",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,6 @@
                 "extract.php"
             ],
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL v3"
             ],
@@ -44,7 +43,10 @@
             ],
             "description": "Environment Settings Tool",
             "homepage": "https://github.com/AOEpeople/EnvSettingsTool",
-            "time": "2014-11-17 19:16:37"
+            "support": {
+                "source": "https://github.com/AOEpeople/EnvSettingsTool/tree/master"
+            },
+            "time": "2015-01-08 05:22:34"
         },
         {
             "name": "composer/composer",
