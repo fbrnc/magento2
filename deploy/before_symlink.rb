@@ -33,7 +33,7 @@ end
 execute "Load env vars" do
   user "deploy"
   cwd "#{release_path}"
-  command "source magento-environment.sh"
+  command ". #{release_path}/magento-environment.sh"
   action :run
 end
 
