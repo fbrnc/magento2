@@ -53,3 +53,11 @@ file "#{release_path}/pub/version.txt" do
   action :create_if_missing
   content "Hello World! :)"
 end
+
+execute "Fix owner" do
+  command "chown -R deploy.www-data #{release_path}/var #{release_path}/pub/media"
+end
+
+execute "Fix permissions" do
+  command "chmod -R ug+rws #{release_path}/var #{release_path}/pub/media"
+end
