@@ -203,5 +203,11 @@
             "Magento\\ToolkitFramework\\": "dev/tools/performance-toolkit/framework/Magento/ToolkitFramework/",
             "Magento\\Setup\\": "setup/module/Magento/Setup/src/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/AOEpeople/EnvSettingsTool.git"
+        }
+    ]
 }
